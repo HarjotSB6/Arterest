@@ -9,7 +9,7 @@ html{
   font-size: 100%
 }
 body{
-  background: linear-gradient(to bottom,#1d2026,#505766);
+  /*background: linear-gradient(to bottom,#1d2026,#505766);*/
   min-height: 100vh;
   width: 100%;
   color: #fff;
