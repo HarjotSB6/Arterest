@@ -54,14 +54,21 @@ nav .btn{
   border: 0;
   line-height: 1;
   outline: none;
+  font-weight: 700;
   font-size: 15px;
   padding: 16px 30px;
+  cursor: pointer;
   border-radius: 1rem;
+  font-family: 'poppins', sans-serif;
   background: #ffff;
   transition: all 0.3s linear;
 }
-nav .btn{
-
+nav .btn:hover,
+nav .btn:focus{
+  background: #9e9e9e;
+}
+nav .btn:active{
+  background: #ffff;
 }
 .wrapper {
   width: 25rem;
