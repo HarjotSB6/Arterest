@@ -1,5 +1,5 @@
 *{
-  color: white;
+  color: black;
   margin: 0;
   padding: 0;
   font-family: 'poppins', sans-serif;
@@ -43,4 +43,91 @@ nav .home{
   margin-left: 30px;
   text-decoration: none;
   color: #fff;
+}
+.main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+.main h1{
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin-top: 15px;
+  border-bottom: 1px solid silver;
+}
+.center form{
+  padding: 0 40px;
+}
+form .txtf{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 35px 35px;
+}
+.txtf input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline:none;
+}
+.txtf label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .4s;
+}
+.txtf span::before{
+  content:'';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #1d2026;
+  transition: .4s;
+}
+.txtf input:focus ~ label,
+.txtf input:valid ~ label{
+  top: -5px;
+  color: #1d2026;
+}
+.txtf input:focus ~ span::before,
+.txtf input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 35px;
+  color: #1d2026;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration:underline;
+}
+.btn{
+  margin: auto;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #dbdbdb;
+  display: block;
+  border: 0;
+  line-height: 1;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 16px 30px;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-family: 'poppins', sans-serif;
+  background: #505766;
+  transition: all 0.3s linear;
 }
