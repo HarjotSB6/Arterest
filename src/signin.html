@@ -3,34 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Arterest | Login</title>
-    <link rel="stylesheet" href="signstyle.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav>
-      <img src="../images/menu.png" class="menuimg">
+      <!-- <img src="../images/menu.png" class="menuimg"> -->
       <img src="../images/logo.png" class="logo">
       <img src="../images/logowritten.png" class="logowritten">
-      <a class="home" href="../index.html">Home</a>
+      <a class="home-signin" href="../index.html">Home</a>
     </nav>
-    <div class="main">
+    <div class="main-sigin">
      <h1>Sign In</h1>
       <form method="post">
-        <div class="txtf">
+        <div class="txtf-signin">
           <input type="text" required>
           <span></span>
           <label>Username</label>
         </div>
-        <div class="txtf">
+        <div class="txtf-signin">
           <input type="password" required>
           <span></span>
           <label>Password</label>
         </div>
-        <div class="pass">
+        <div class="pass-signin">
           <b>Forget Password?</b>
         </div>
-        <center><input type="submit" value="Login"></center>
-        <div class="signlink">
-          Not a Member ? <a href="../src/join.html">Signup</a>
+        <center><input class="btn-sigin" type="submit" value="Login"></center>
+        <div class="link-signin">Not a Member ? <a href="../src/join.html">Signup</a>
         </div>
       </form>
     </div>
