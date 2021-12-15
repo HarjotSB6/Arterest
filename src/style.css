@@ -355,6 +355,20 @@ form .txtf-signin{
   background: #505766;
   transition: all 0.3s linear;
 }
+.footer{
+  height: 500px;
+  background-color: black;
+  font-size: 30px;
+  font-weight: 300;
+  background-color: #000000;
+  height: 5vh;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
 @media screen and (min-width: 600px) {
   .card-tall {
     grid-row: span 2 / auto;
