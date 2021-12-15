@@ -35,6 +35,8 @@ nav .logowritten{
   cursor: pointer;
   margin-right: 20px;
 }
+
+/*
 nav .home{
   flex: 1;
   text-align: right;
@@ -44,7 +46,7 @@ nav .home{
   text-decoration: none;
   color: #fff;
 }
-.main{
+.join-main{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,21 +55,18 @@ nav .home{
   background: white;
   border-radius: 10px;
 }
-.main h1{
+.join-main h1{
   text-align: center;
   padding: 0 0 10px 0;
   margin-top: 15px;
   border-bottom: 1px solid silver;
 }
-.center form{
-  padding: 0 40px;
-}
-form .txtf{
+.txtf-join{
   position: relative;
   border-bottom: 2px solid #adadad;
   margin: 35px 35px;
 }
-.txtf input{
+.txtf-join input{
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -76,7 +75,7 @@ form .txtf{
   background: none;
   outline:none;
 }
-.txtf label{
+.txtf-join label{
   position: absolute;
   top: 50%;
   left: 15px;
@@ -86,7 +85,7 @@ form .txtf{
   pointer-events: none;
   transition: .4s;
 }
-.txtf span::before{
+.txtf-join span::before{
   content:'';
   position: absolute;
   top: 40px;
@@ -96,24 +95,16 @@ form .txtf{
   background: #1d2026;
   transition: .4s;
 }
-.txtf input:focus ~ label,
-.txtf input:valid ~ label{
+.txtf-join input:focus ~ label,
+.txtf-join input:valid ~ label{
   top: -5px;
   color: #1d2026;
 }
-.txtf input:focus ~ span::before,
-.txtf input:valid ~ span::before{
+.txtf-join input:focus ~ span::before,
+.txtf-join input:valid ~ span::before{
   width: 100%;
 }
-.pass{
-  margin: -5px 0 20px 35px;
-  color: #1d2026;
-  cursor: pointer;
-}
-.pass:hover{
-  text-decoration:underline;
-}
-.btn{
+.btn-join{
   margin: auto;
   margin-bottom: 30px;
   font-weight: 700;
@@ -131,3 +122,16 @@ form .txtf{
   background: #505766;
   transition: all 0.3s linear;
 }
+
+/* .center form{
+  padding: 0 40px;
+}
+.pass{
+  margin: -5px 0 20px 35px;
+  color: #1d2026;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration:underline;
+} */
+

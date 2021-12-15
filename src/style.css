@@ -9,6 +9,8 @@ html{
   font-size: 100%
 }
 body{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(129,129,129,1) 100%);
   min-height: 100vh;
   width: 100%;
   color: #fff;
@@ -137,6 +139,108 @@ nav .btn:active{
   padding: 0;
   margin: 0;
 }
+
+/*Join page*/
+nav .home-join{
+  flex: 1;
+  text-align: right;
+  display: inline-block;
+  margin: 0 20;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.join-main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+.join-main h1{
+  color: black;
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin-top: 15px;
+  border-bottom: 1px solid silver;
+}
+.txtf-join{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 35px 35px;
+}
+.txtf-join input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline:none;
+}
+.txtf-join label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .4s;
+}
+.txtf-join span::before{
+  content:'';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #1d2026;
+  transition: .4s;
+}
+.txtf-join input:focus ~ label,
+.txtf-join input:valid ~ label{
+  top: -5px;
+  color: #1d2026;
+}
+.txtf-join input:focus ~ span::before,
+.txtf-join input:valid ~ span::before{
+  width: 100%;
+}
+.btn-join{
+  margin: auto;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #dbdbdb;
+  display: block;
+  border: 0;
+  line-height: 1;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 16px 30px;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-family: 'poppins', sans-serif;
+  background: #505766;
+  transition: all 0.3s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 600px) {
   .card-tall {
     grid-row: span 2 / auto;
@@ -145,3 +249,5 @@ nav .btn:active{
     grid-column: span 2 / auto;
   }
 }
+
+
