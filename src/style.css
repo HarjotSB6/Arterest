@@ -355,16 +355,6 @@ form .txtf-signin{
   background: #505766;
   transition: all 0.3s linear;
 }
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 600px) {
   .card-tall {
     grid-row: span 2 / auto;
