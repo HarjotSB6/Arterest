@@ -2,14 +2,14 @@
   /*Universal*/
   margin: 0;
   padding: 0;
-  font-family: 'poppins', sans-serif;
   box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
 }
 html{
   font-size: 100%
 }
 body{
-  background-image: radial-gradient(circle, #ffffff, #cacaca, #979797, #676767, #3b3b3b, #292929, #181818, #000000, #000000, #000000, #000000, #000000);
+  background-image: radial-gradient(circle, #575757, #474747, #373737, #282828, #1a1a1a, #141414, #0b0b0b, #000000, #000000, #000000, #000000, #000000);
   min-height: 100vh;
   width: 100%;
   color: #fff;
@@ -354,6 +354,22 @@ form .txtf-signin{
   font-family: 'poppins', sans-serif;
   background: #505766;
   transition: all 0.3s linear;
+}
+.next-icon{
+  display: flex;
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.next-icon h3{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.next{
+  text-decoration: none;
+  color: white;
 }
 .footer{
   height: 500px;
