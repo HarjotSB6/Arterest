@@ -112,7 +112,7 @@ nav .btn:active{
   flex-wrap: wrap;
   padding: 0 4px;
 }
-.image-mosaic {
+.image-grid {
   display: grid;
   position: relative;
   gap: 1rem;
